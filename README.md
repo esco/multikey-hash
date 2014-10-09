@@ -8,7 +8,7 @@ hash together multiple objects of any type*
 
 # Installation
 ```
-npm install multikey-hash
+$ npm install multikey-hash
 ```
 
 ## Examples
