@@ -21,20 +21,7 @@ mkhash(5, 'afuh08h3sfasfs40n340unfe0ruhn0unerf0u', function test(){console.log(t
 
 ## FAQ
 
-### What types of objects can be used as a key?
+### What types of keys can be used?
 
-*Thanks to [toSource](https://github.com/marcello3d/node-tosource) the following types are supported
+Any primitive or mutable object can be used as a key.
 
-* Numbers
-* Strings
-* Array literals
-* object literals
-* function
-* RegExp literals
-* Dates
-* true
-* false
-* undefined
-* null
-* NaN
-* Infinity

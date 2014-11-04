@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "Generates a hash based on function arguments",
   "main": "multikey-hash.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/esco/multikey-hash.git"
+  },
   "scripts": {
     "test": "mocha test/*-test.js --require test/config.js",
     "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --ignore-leaks --require test/config  test/",
@@ -17,6 +21,7 @@
   "license": "ISC",
   "devDependencies": {
     "chai": "^1.9.2",
+    "es6-collections": "^0.3.4",
     "grunt": "^0.4.5",
     "gulp": "^3.8.8",
     "gulp-bench": "^1.1.0",
@@ -32,6 +37,6 @@
   },
   "dependencies": {
     "imurmurhash": "^0.1.4",
-    "tosource": "^0.1.2"
+    "simple-token": "0.0.2"
   }
 }

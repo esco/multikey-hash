@@ -7,7 +7,8 @@ var benchmark = require('gulp-bench');
 
 var paths = {
   src: ['*.js'],
-  tests: ['test/*.js']
+  tests: ['test/*.js'],
+  benchmarks: ['benchmark/*.js']
 };
 
 gulp.task('lint', function(){
@@ -25,13 +26,8 @@ gulp.task('docs', function() {
     .pipe(gulp.dest("./"));
 });
 
-gulp.task('bench-concat', function() {
-  return gulp.src('benchmark/concat.js')
-    .pipe(benchmark());
-});
-
-gulp.task('bench-loop', function() {
-  return gulp.src('benchmark/loop.js')
+gulp.task('bench', function() {
+  return gulp.src(paths.benchmarks)
     .pipe(benchmark());
 });
 

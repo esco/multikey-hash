@@ -1,5 +1,5 @@
 var MurmurHash3 = require('imurmurhash');
-var toSource = require('tosource');
+var tokenize = require('simple-token');
 
 /**
  * Generates a hash using arguments
@@ -11,7 +11,7 @@ var toSource = require('tosource');
 function hash() {
   var hashState = MurmurHash3();
   for (var i = 0, len = arguments.length ;  i < len; i++) {
-    hashState.hash(toSource(arguments[i]));
+    hashState.hash(tokenize(arguments[i]));
   }
   return hashState.result();
 }
