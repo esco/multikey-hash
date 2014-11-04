@@ -37,6 +37,6 @@
   },
   "dependencies": {
     "imurmurhash": "^0.1.4",
-    "simple-token": "0.0.2"
+    "simple-token": "^0.1.0"
   }
 }
