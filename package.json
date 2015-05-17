@@ -1,6 +1,6 @@
 {
   "name": "multikey-hash",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generates a hash based on function arguments",
   "main": "multikey-hash.js",
   "repository": {
