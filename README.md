@@ -6,6 +6,8 @@ hash together multiple objects of any type*
 
 >Arguments are serialized and then hashed together using the [MurmurHash3](http://en.wikipedia.org/wiki/MurmurHash) algorithm for efficient memory usage (small sized hashes), speed and random distribution.
 
+If you're looking for a full hashmap implementation check out dependent module [superhash](http://github.com/esco/superhash)
+
 # Installation
 ```
 $ npm install multikey-hash
